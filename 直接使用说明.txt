@@ -12,6 +12,10 @@ pip install schema
 然后在visualization目录下命令行运行python run_server.py
 在浏览器中输入
 http://localhost:8080/api/v1?company=600129
-可试看
- 
+可试看图像 
+并且，每次调用这个网址，会在
+visualization\templates 下面保存此次查询得到的结果到data.json
 
+
+从可视化的visualization\server\models.py这个文件中  可以发现，我们最终只使用了spo这个表。
+也就是说，我们前期所有的工作的目的就是为了整出这样的一张具有三元组的spo表
